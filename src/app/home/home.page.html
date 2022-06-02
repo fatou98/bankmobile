@@ -1,0 +1,43 @@
+<ion-header >
+  <ion-toolbar color="warning">
+    <ion-title>ACCUEIL</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <img src="assets/images/home.jpg" />
+
+    <ion-card-content class="content">
+      <ion-item button (click)="buttonClick()" color="success">
+        <ion-label>
+          SITE WEB
+        </ion-label>
+      </ion-item>
+      <ion-item button [routerLink]="['/login']" routerLinkActive="router-link-active"  color="success">
+        <ion-label>
+          ESPACE CLIENTS
+        </ion-label>
+      </ion-item>
+      <ion-item button (click)="buttonClick()" color="success">
+        <ion-label>
+          INFORMATIONS
+        </ion-label>
+      </ion-item>
+      <ion-item button (click)="buttonClick()" color="success">
+        <ion-label>
+          CONTACT
+        </ion-label>
+      </ion-item>
+
+
+
+    </ion-card-content>
+    <img src="assets/images/home.jpg" />
+
+  </ion-card>
+
+</ion-content>
+<ion-footer style="text-align:center;padding:5px;color:white;background-color: rgb(236, 0, 0);">
+  Plus proche de vous
+</ion-footer>

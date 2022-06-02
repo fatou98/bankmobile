@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/dashboard"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Agence</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="light">
+  <ion-card>
+    <img src="assets/images/home.jpg" />
+    <br>
+
+    <ion-card-content class="content">
+      <ion-item>
+        <ion-label>Gouvernorat:</ion-label>
+        <ion-select placeholder="">
+          <ion-select-option value="Ariana">Ariana </ion-select-option>
+          <ion-select-option value="Beja">Beja</ion-select-option>
+          <ion-select-option value="Ben Arous">Ben arous</ion-select-option>
+          <ion-select-option value="Bizerte">Bizerte</ion-select-option>
+          <ion-select-option value="Gabes">Gabes</ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-button expand="block" (click)="conversion()">RECHERCHER</ion-button>
+
+      <br>
+      <ion-list lines="full">
+        <ion-item [routerLink]="['/agence/details']" routerLinkActive="router-link-active" >
+          <ion-label>AGENCE 1</ion-label>
+        </ion-item>
+        <ion-item [routerLink]="['/agence/details']">
+          <ion-label>AGENCE 2</ion-label>
+        </ion-item>
+        <ion-item [routerLink]="['/agence/details']">
+          <ion-label>AGENCE 3</ion-label>
+        </ion-item><ion-item [routerLink]="['/agence/details']">
+          <ion-label>AGENCE 4</ion-label>
+        </ion-item><ion-item [routerLink]="['/agence/details']">
+          <ion-label>AGENCE 5</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
+<ion-footer style="text-align:center;padding:5px;color:white;background-color: black;">
+  Plus proche de vous
+</ion-footer>

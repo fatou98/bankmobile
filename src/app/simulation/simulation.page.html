@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/dashboard"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Conversion</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="light">
+  <ion-card>
+    <img src="assets/images/home.jpg" />
+    <br>
+
+    <ion-card-content class="content">
+      <ion-item>
+        <ion-label>Liste des crédits:</ion-label>
+        <ion-select placeholder="">
+          <ion-select-option value="Expresson">Expresso </ion-select-option>
+          <ion-select-option value="Mahly">Mahly</ion-select-option>
+          <ion-select-option value="Omnia">Omnia</ion-select-option>
+          <ion-select-option value="Dari">Dari</ion-select-option>
+          <ion-select-option value="Auto">Auto</ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Revenue mensuelle</ion-label>
+        <ion-input type="number" [(ngModel)]="amount"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Montant souhaité</ion-label>
+        <ion-input type="number" [(ngModel)]="amount"></ion-input>
+      </ion-item>
+      <br>
+      <ion-item>
+        <ion-label>Durée de remboursement:</ion-label>
+        <ion-select placeholder="">
+          <ion-select-option value="12mois">12mois </ion-select-option>
+          <ion-select-option value="24mois">24mois</ion-select-option>
+          <ion-select-option value="36mois">36mois</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <br>
+      <ion-button expand="block" (click)="conversion()">CALCULER</ion-button>
+
+      <br>
+
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
+<ion-footer style="text-align:center;padding:5px;color:white;background-color: black;">
+  Plus proche de vous
+</ion-footer>

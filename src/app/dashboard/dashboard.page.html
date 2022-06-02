@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Dashboard</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="light">
+  <ion-card>
+    <img src="assets/images/home.jpg" />
+    <br>
+    <ion-card-header>
+      <ion-card-title style="text-align:center;">Bienvenue</ion-card-title>
+    </ion-card-header>
+    <ion-card-content class="content">
+      <ion-item button [routerLink]="['/home-customer']" routerLinkActive="router-link-active"  color="danger">
+        <ion-label>
+         COMPTE CLIENT
+        </ion-label>
+      </ion-item>
+      <ion-item button [routerLink]="['/conversion']" routerLinkActive="router-link-active"  color="danger">
+        <ion-label>
+          CONVERSION
+        </ion-label>
+      </ion-item>
+      <ion-item button [routerLink]="['/devises']" color="danger">
+        <ion-label>
+          DEVISES
+        </ion-label>
+      </ion-item>
+      <ion-item button [routerLink]="['/agence']" color="danger">
+        <ion-label>
+          LISTE DES AGENCES
+        </ion-label>
+      </ion-item>
+      <ion-item button [routerLink]="['/simulation']" color="danger">
+        <ion-label>
+          SIMULATION CREDITS
+        </ion-label>
+      </ion-item>
+      <ion-item button [routerLink]="['/devises']" color="danger">
+        <ion-label>
+         MES MESSAGES
+        </ion-label>
+      </ion-item>
+      </ion-card-content>
+
+  </ion-card>
+
+</ion-content>
+<ion-footer style="text-align:center;padding:5px;color:white;background-color: black;">
+  Plus proche de vous
+</ion-footer>

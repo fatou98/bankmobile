@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/dashboard"></ion-back-button>
+    </ion-buttons>
+    <ion-title>COMPTE CLIENT</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card [routerLink]="['/home-customer/balance']" routerLinkActive="router-link-active"  color="warning" class="card-button">
+    CONSULTER LE SOLDE
+  </ion-card>
+  <ion-card color="success" class="card-button"[routerLink]="['/home-customer/history']" routerLinkActive="router-link-active" >
+    HISTORIQUES TRANSACTIONS
+  </ion-card>
+  <ion-card color="danger" class="card-button" [routerLink]="['/home-customer/recharge']" routerLinkActive="router-link-active" >
+    RECHARGES GSM
+  </ion-card>
+  <ion-card color="primary" class="card-button" [routerLink]="['/home-customer/online-services']"  >
+    SERVICES
+  </ion-card>
+</ion-content>

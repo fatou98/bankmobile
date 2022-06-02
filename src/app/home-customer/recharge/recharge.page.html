@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home-customer"></ion-back-button>
+    </ion-buttons>
+    <ion-title>RECHARGE</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="light">
+  <ion-card>
+    <img src="assets/images/home.jpg" />
+    <br>
+
+    <ion-card-content class="content">
+      <ion-item>
+        <ion-label position="floating">N° GSM</ion-label>
+        <ion-input type="number" [(ngModel)]="gsm"></ion-input>
+      </ion-item>
+<br>
+
+      <ion-item>
+        <ion-label position="floating">Montant en dinars</ion-label>
+        <ion-input type="number"  [(ngModel)]="amount"></ion-input>
+      </ion-item>
+<br>
+<br>
+        <ion-button expand="block" >CONVERTIR</ion-button>
+
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
+<ion-footer style="text-align:center;padding:5px;color:white;background-color: black;">
+  Plus proche de vous
+</ion-footer>
